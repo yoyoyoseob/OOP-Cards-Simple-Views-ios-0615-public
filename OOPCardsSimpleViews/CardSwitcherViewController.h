@@ -12,10 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *topLabel;
 @property (weak, nonatomic) IBOutlet UILabel *middleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
-@property (weak, nonatomic) IBOutlet UIButton *spadesButton;
-@property (weak, nonatomic) IBOutlet UIButton *clubsButton;
-@property (weak, nonatomic) IBOutlet UIButton *diamondsButton;
-@property (weak, nonatomic) IBOutlet UIButton *heartsButton;
 
 - (IBAction)threeOfSpadesButton:(id)sender;
 - (IBAction)fourOfClubsButton:(id)sender;

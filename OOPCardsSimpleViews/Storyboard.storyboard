@@ -79,13 +79,6 @@
                                     <action selector="fourOfClubsButton:" destination="5Nb-VI-X55" eventType="touchUpInside" id="oJV-oj-n01"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEo-ZS-C0F">
-                                <rect key="frame" x="0.0" y="501" width="320" height="67"/>
-                                <color key="backgroundColor" red="0.93333339691162109" green="0.97647064924240112" blue="0.9803922176361084" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suit / Rank 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-j5-g2U">
                                 <rect key="frame" x="254" y="425" width="50" height="85"/>
                                 <accessibility key="accessibilityConfiguration" label="bottomLabel"/>
@@ -98,11 +91,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="UE0-j5-g2U" id="UY9-GZ-2fs"/>
-                        <outlet property="clubsButton" destination="I3O-J0-hdi" id="y96-xS-5gC"/>
-                        <outlet property="diamondsButton" destination="9gi-cv-pKn" id="6te-1c-05S"/>
-                        <outlet property="heartsButton" destination="loo-2B-lEz" id="HPh-Hy-TZn"/>
                         <outlet property="middleLabel" destination="SZT-gN-Rjw" id="kn4-xS-3Jm"/>
-                        <outlet property="spadesButton" destination="syv-YH-GHc" id="Nys-hP-wAS"/>
                         <outlet property="topLabel" destination="NMe-sk-Sbj" id="19n-6I-4R3"/>
                     </connections>
                 </viewController>

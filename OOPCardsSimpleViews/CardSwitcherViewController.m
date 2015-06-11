@@ -7,6 +7,7 @@
 //
 
 #import "CardSwitcherViewController.h"
+#import "PlayingCard.h"
 
 @interface CardSwitcherViewController ()
 
@@ -17,36 +18,52 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view bringSubviewToFront:self.spadesButton];
-    [self.view bringSubviewToFront:self.clubsButton];
-    [self.view bringSubviewToFront:self.diamondsButton];
-    [self.view bringSubviewToFront:self.heartsButton];
     // Do any additional setup after loading the view.
 }
 
 
 - (IBAction)threeOfSpadesButton:(id)sender {
-    self.topLabel.text = self.spadesButton.titleLabel.text;
-    self.middleLabel.text = self.spadesButton.titleLabel.text;
-    self.bottomLabel.text = self.spadesButton.titleLabel.text;
+    PlayingCard *threeOfClubs = [[PlayingCard alloc] initWithSuit:@"♠️" rank:@3];
+    
+    NSString *stringIWantToDisplay = [NSString stringWithFormat:@"%@ %@", threeOfClubs.rank, threeOfClubs.suit];
+    
+    self.middleLabel.text = stringIWantToDisplay;
+    self.topLabel.text = stringIWantToDisplay;
+    self.bottomLabel.text = stringIWantToDisplay;
+    
 }
 
 - (IBAction)fourOfClubsButton:(id)sender {
-    self.topLabel.text = self.clubsButton.titleLabel.text;
-    self.middleLabel.text = self.clubsButton.titleLabel.text;
-    self.bottomLabel.text = self.clubsButton.titleLabel.text;
+    PlayingCard *fourOfClubs = [[PlayingCard alloc] initWithSuit:@"♣️" rank:@4];
+    
+    NSString *stringIWantToDisplay = [NSString stringWithFormat:@"%@ %@", fourOfClubs.rank, fourOfClubs.suit];
+    
+    self.middleLabel.text = stringIWantToDisplay;
+    self.topLabel.text = stringIWantToDisplay;
+    self.bottomLabel.text = stringIWantToDisplay;
+
 }
 
 - (IBAction)eightOfDiamondsButton:(id)sender {
-    self.topLabel.text = self.diamondsButton.titleLabel.text;
-    self.middleLabel.text = self.diamondsButton.titleLabel.text;
-    self.bottomLabel.text = self.diamondsButton.titleLabel.text;
+    PlayingCard *eightOfDiamonds = [[PlayingCard alloc]initWithSuit:@"♦️" rank:@8];
+    
+    NSString *stringIWantToDisplay = [NSString stringWithFormat:@"%@ %@", eightOfDiamonds.rank, eightOfDiamonds.suit];
+    
+    self.middleLabel.text = stringIWantToDisplay;
+    self.topLabel.text = stringIWantToDisplay;
+    self.bottomLabel.text = stringIWantToDisplay;
+
 }
 
 - (IBAction)tenOfHeartsButton:(id)sender {
-    self.topLabel.text = self.heartsButton.titleLabel.text;
-    self.middleLabel.text = self.heartsButton.titleLabel.text;
-    self.bottomLabel.text = self.heartsButton.titleLabel.text;
+    PlayingCard *tenOfHearts = [[PlayingCard alloc]initWithSuit:@"♥️" rank:@10];
+    
+    NSString *stringIWantToDisplay = [NSString stringWithFormat:@"%@ %@", tenOfHearts.rank, tenOfHearts.suit];
+    
+    self.middleLabel.text = stringIWantToDisplay;
+    self.topLabel.text = stringIWantToDisplay;
+    self.bottomLabel.text = stringIWantToDisplay;
+    
 }
 
 @end
